@@ -78,6 +78,37 @@
 
         <!--Aqui comienza el comtenido principal-->
         <main>
+            <h1 class="main__title">Panel de Control</h1>
+            <ul class="main__migas">
+                <li><a href="#"></a></li>
+                <li class="divider"></li>
+                <li><a href="#" class="active">Bienvenido</a></li>
+            </ul>
+
+            <div class="main__data">
+                <div class="data__content-data">
+                    <h3>Desmostracion nde consumo de API</h3>
+                    <p>Esta tabla consume: https://fakestoreapi.com/products para obtener los datps que se indexan en la tabla</p>
+                    <div class="main__divTable">
+                        <div class="main__div-header">
+                            <button onclick="openModal()" class="main__nuevo-registro">Registrar</button>
+                        </div>
+
+                        <table class="main__divTable-table">
+                            <thead class="main__divTable-table--thead">
+                                <tr>ID</tr>
+                                <tr>Nombre del producto</tr>
+                                <tr>Precio</tr>
+                                <tr>Categoria</tr>
+                                <tr>Acciones</tr>
+                            </thead>
+
+                            <tbody id="productTableBody"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
         </main>
         <!--Aqui termina el contenido principal-->
 
